@@ -1,0 +1,351 @@
+/* For screens smaller than 576px */
+@media (max-width: 575.98px) {
+
+    /* H1 styles */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* H2 styles */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* H3 styles */
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* H4 styles */
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Set description section styles */
+    .description-text p {
+        font-size: 1rem;
+    }
+
+    .description-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Set content text paragraph styles */
+    .content-text p {
+        font-size: 1rem;
+    }
+
+    /* Portfolio grid styles */
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* For screens larger than or equal to 576px */
+@media (min-width: 576px) {
+
+    /* Set background for body element */
+    body {
+        background: linear-gradient(to right, #0e1320, #2d3147);
+    }
+
+    /* Set header wrapper styles */
+    .header-wrapper {
+        width: initial;
+        max-width: 1300px;
+    }
+
+    /* Showcase grid styles */
+    .services-grid {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+/* For screens larger than or equal to 768px */
+@media (min-width: 768px) {
+
+    /* Set description styles */
+    .description-image {
+        display: flex;
+    }
+
+    .description-text {
+        max-width: 400px;
+    }
+
+    /* About's content text styles */
+    .content-text {
+        max-width: 400px;
+        padding-left: 0;
+        padding-right: 80px;
+    }
+
+    /* About's content image styles */
+    .content-image {
+        display: grid;
+    }
+
+    /* my-skills content text styles */
+    #my-skills .content-text {
+        max-width: 90%;
+    }
+
+    /* Skill styles */
+    .skill {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* Set default styles for <i> */
+    i {
+        font-size: 1.5rem;
+    }
+
+    /* Set edfault styles for <figcaption> */
+    figcaption {
+        font-size: 0.8rem;
+    }
+
+    /* Showcase grid styles */
+    .services-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* For screens larger than or equal to 992px */
+@media (min-width: 992px) {
+
+    /* H1 styles */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* H2 styles */
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    /* H3 styles */
+    h3 {
+        font-size: 2rem;
+    }
+
+    /* H4 styles */
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    /* Menu icon container styles */
+    .menu{
+        display: none;
+    }
+
+    /* Set nav styles */
+    header nav {
+        visibility: visible;
+        margin-left: auto;
+        position: initial;
+        left: initial;
+        top: initial;
+        width: initial;
+        height: initial;
+        background-color: initial;
+    }
+
+    #close-nav{
+        display: none;
+    }
+
+    nav ul {
+        align-items: center;
+        flex-direction: initial;
+        align-items: initial;
+        gap: initial;
+        margin-top: initial;
+        padding-left: initial;
+    }
+
+    nav a {
+        font-weight: 600;
+        font-size: initial;
+        color: #fff;
+    }
+
+    /* Set logo container styles*/
+    .logo {
+        margin-left: initial;
+    }
+
+    /* Set description styles */
+    .description-text p {
+        font-size: 1.1rem;
+    }
+
+    .description-text {
+        max-width: 600px;
+    }
+
+    /* Set padding for 'btn' class */
+    .btn {
+        padding: 20px 40px;
+    }
+
+    /* Set content text paragraph styles */
+    .content-text p {
+        font-size: 1.1rem;
+    }
+
+    /* About's content text styles */
+    .content-text {
+        max-width: 600px;
+    }
+
+    /* Content skills styles */
+    .content-skills {
+        flex: 1;
+        gap: 40px;
+        padding-right: 40px;
+    }
+
+    #my-skills .content-text {
+        max-width: 600px;
+        padding-left: 80px;
+    }
+
+    /* Skill styles */
+    .skill {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Set default styles for <i> */
+    i {
+        font-size: 2rem;
+    }
+
+    /* Set edfault styles for <figcaption> */
+    figcaption {
+        font-size: 0.9rem;
+    }
+
+    /* Content wrapper styles */
+    .content-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    /* Set default styles for <i> */
+    i {
+        font-size: 3.5rem;
+    }
+
+    /* Set edfault styles for <figcaption> */
+    figcaption {
+        font-size: 1rem;
+    }
+
+    /* Set styles for class "vertical-center" */
+    .vertical-center {
+        width: 80%;
+    }
+
+    /* Showcase grid styles */
+    .services-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio grid styles */
+    .portfolio-grid {
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Testimonials clients grid styles */
+    .content-clients{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* For screens larger than or equal to 1200px */
+@media (min-width: 1200px) {
+
+    /* Skill styles */
+    .skill {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Content skills styles */
+    .content-skills {
+        flex: 1;
+        gap: 40px;
+        padding-right: 80px;
+    }
+
+    /* Content wrapper styles */
+    .content-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    /* Set default styles for <i> */
+    i {
+        font-size: 3.5rem;
+    }
+
+    /* Set edfault styles for <figcaption> */
+    figcaption {
+        font-size: 1rem;
+    }
+
+    #my-skills .content-text {
+        padding-left: 80px;
+    }
+
+    /* Set styles for class  "vertical-center" */
+    .vertical-center {
+        width: 80%;
+    }
+
+    /* Showcase grid styles */
+    .services-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio grid styles */
+    .portfolio-grid {
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Testimonials clients grid styles */
+    .content-clients{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer styles */
+    footer section{
+        flex-basis: 33%;
+    }
+
+    footer nav{
+        flex-basis: 25%;
+        padding-left: 50px;
+    }
+
+    #contact{
+        padding-left: 100px;
+    }
+
+}

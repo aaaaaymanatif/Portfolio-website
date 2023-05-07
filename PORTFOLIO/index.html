@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>My Portfolio</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/style/main.css" />
+    <link rel="stylesheet" href="assets/style/media-queries.css" />
+
+    <!-- Icons from https://devicon.dev/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+
+        <!-- Header wrapper to contain all header elements -->
+        <section class="header-wrapper">
+
+            <div class="logo-navigation-wrapper">
+
+                <!-- Menu icon container for small screens -->
+                <div class="menu" onclick="OpenHeaderNav()">
+
+                    <img src="assets/icons/menu.png" alt="Menu"/>
+
+                </div>
+
+                <!-- Logo section for the logo icon and website name -->
+                <div class="logo">
+
+                    <img src="assets/icons/logo.png" alt="Portfolio Logo">
+
+                    <h1>My Portfolio</h1> <!-- The main heading for the website -->
+
+                </div>
+
+                <!-- Navigation section with unordered list of links -->
+                <nav>
+
+                    <!-- Close image for smaller screens, when the nav have a fixed position -->
+                    <img id="close-nav" src="assets/icons/close.png" alt="Close" onclick="CloseHeaderNav()"/>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <!-- Description section with text and image -->
+            <section class="description">
+
+                <!-- Description text with heading, paragraph and link -->
+                <section class="description-text">
+
+                    <h2 class="hide-translateX">Senior developer Ayman Atif, skilled in diverse technologies.</h2>
+
+                    <p class="hide-translateX">I'm a senior developer with expertise in desktop, web and mobile app development. I bring extensive experience and proficiency in diverse technologies to deliver quality solutions.</p>
+
+                    <button class="btn hide-translateX" onclick="window.location.href='#about'">
+                        <div>Learn More</div>
+                    </button>
+                </section>
+
+                <!-- A container for the description image -->
+                <figure class="description-image">
+
+                    <!-- A container for the description image with oval shape -->
+                    <div class="description-image-container hide-translateX" id="portrait-container">
+
+                        <img src="assets/images/me.png" alt="Portrait of Me">
+
+                    </div>
+
+                </figure>
+
+            </section>
+
+        </section>
+
+    </header>
+
+    <!-- Main section -->
+    <main>
+
+        <!-- About section -->
+        <section id="about">
+
+            <header class="title">
+
+                <!-- A container tat holds the title and icon for the about section -->
+                <div class="header-container">
+
+                    <h2>About Me</h2>
+
+                    <img src="assets/icons/about-me.png" alt="About Me" />
+
+                </div>
+
+                <p>A brief introduction about my skills and my experiences</p>
+
+            </header>
+
+            <!-- A section for brief introduction -->
+            <section class="content-wrapper">
+
+                <!-- A container for the image -->
+                <figure class="content-image hide-translateY">
+
+                    <div class="content-image-container">
+
+                        <img src="assets/images/office.jpeg" alt="Office portrait" />
+
+                    </div>
+
+                </figure>
+
+                <!-- A container for text and social media -->
+                <section class="content-text hide-translateY">
+
+                    <h3>Let me tell you a little bit more about my expertise and skills</h3>
+
+                    <p>I'm an experienced developer proficient in various programming languages including C#, Java, SQL, MySQL, PHP, C, C++, HTML, CSS, and JavaScript. I specialize in React.js and Flutter frameworks and have been developing quality solutions since 2011. With my technical skills and expertise, I ensure efficient, scalable and secure solutions tailored to meet the client's requirements.</p>
+
+                    <p>I have a strong background in Artificial Intelligence. I have participated in various AI competitions, including hackathons, showcasing my expertise in machine learning, deep learning, and data science. With my AI skills and programming proficiency, I develop innovative and intelligent solutions to meet the diverse needs of my clients.</p>
+
+                    <!-- A container for social media -->
+                    <ul class="social-media-container">
+
+                        <li onclick="window.open('https://www.linkedin.com/in/ayman-atif-864502264/','_blank')" class="social-media">
+                            <img src="assets/icons/linkedin.png" alt="Linkedin" />
+                        </li>
+
+                        <li onclick="window.open('https://www.instagram.com/a.y.m.a.n__a.t.i.f','_blank')" class="social-media">
+                            <img src="assets/icons/instagram.png" alt="Instagram" />
+                        </li>
+
+                        <li onclick="window.open('https://mail.google.com/mail/?view=cm&to=a95yman@gmail.com','_blank')" class="social-media">
+                            <img src="assets/icons/gmail.png" alt="Gmail" />
+                        </li>
+
+                        <li onclick="window.open('https://wa.me/212675292841','_blank')" class="social-media">
+                            <img src="assets/icons/whatsapp.png" alt="Whatsapp" />
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </section>
+
+            <!-- A container for skills -->
+            <section class="content-wrapper" id="my-skills">
+
+                <section class="content-text hide-translateY">
+
+                    <h3>What programming languages and frameworks I know?</h3>
+
+                    <p>Since high school, I have been passionate about software engineering and developing solutions. I hold a degree in software engineering, where I specialized in developing robust and scalable software. With my extensive knowledge of programming languages such as Java, C#, SQL, MySQL, PHP, C, C++, HTML, CSS, and JavaScript, I deliver efficient and secure solutions. I am also proficient in popular frameworks such as React.js and Flutter. In addition to my programming skills, I am well-versed in Artificial Intelligence, with experience in machine learning, deep learning, and data science.</p>
+
+                    <p>My passion for developing innovative solutions has led me to participate in various AI competitions and hackathons, where I showcased my skills. With my technical skills and expertise, I ensure that I deliver solutions tailored to meet my clients' needs, while prioritizing efficiency, scalability, and security.</p>
+
+                </section>
+
+                <ul class="content-skills hide-translateY">
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-html5-plain"></i>
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-css3-plain"></i>
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-javascript-plain"></i>
+                            <figcaption>Javascript</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-php-plain"></i>
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-react-original"></i>
+                            <figcaption>React.JS</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-nodejs-plain"></i>
+                            <figcaption>Node.JS</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-java-plain"></i>
+                            <figcaption>Java</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-csharp-plain"></i>
+                            <figcaption>C#</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-androidstudio-plain"></i>
+                            <figcaption>Android Studio</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-mysql-plain"></i>
+                            <figcaption>SQL / MYSQL</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-sqlite-plain"></i>
+                            <figcaption>SQLITE</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-windows8-original"></i>
+                            <figcaption>Windows Apps</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-c-plain"></i>
+                            <figcaption>C</figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="skill hide-translateX">
+                        <figure>
+                            <i class="devicon-cplusplus-plain"></i>
+                            <figcaption>C++</figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </section>
+
+        <!-- Services section -->
+        <section id="services">
+
+            <!-- Title and icon container for the services section -->
+            <header class="title">
+
+                <div class="header-container">
+
+                    <h2>My Services</h2>
+
+                    <img src="assets/icons/about-me.png" alt="About Me" />
+
+                </div>
+
+                <p>A brief introduction about services I do provide</p>
+
+            </header>
+
+            <!-- A container for text and services section -->
+            <section class="showcase">
+
+                <!-- Vertical center section for services section -->
+                <section class="vertical-center hide-translateY">
+
+                    <h3>Experienced Freelance Developer Specializing in Customized Solutions for Desktop, Web and Mobile Apps</h3>
+
+                    <p>I am an experienced freelance developer providing professional services since 2017. I specialize in developing desktop apps, websites, and mobile apps, with a focus on delivering customized and innovative solutions. With my technical skills and expertise, I ensure that my clients receive efficient, scalable, and secure solutions tailored to meet their specific needs. My work experience and dedication to delivering quality services have helped me build a strong reputation in the industry, with a proven track record of meeting deadlines and exceeding expectations.</p>
+
+                </section>
+
+                <!-- A container for services -->
+                <section class="services-grid  hide-translateY">
+
+                    <section class="services-grid-service glow-blue hide-translateY">
+
+                        <div class="services-grid-service-image">
+
+                            <img src="assets/icons/web.png" alt="Web Development" />
+
+                        </div>
+
+                        <section class="services-grid-service-text">
+
+                            <h4>Web Development</h4>
+
+                            <p>I possess strong expertise in developing responsive and dynamic websites using HTML, CSS, and JavaScript. With my in-depth knowledge of popular frameworks such as React.js and proficiency in other web development technologies.</p>
+
+                        </section>
+
+                    </section>
+
+                    <section class="services-grid-service glow-blue hide-translateY">
+
+                        <div class="services-grid-service-image">
+
+                            <img src="assets/icons/mobile.png" alt="Mobile Development" />
+
+                        </div>
+
+                        <section class="services-grid-service-text">
+
+                            <h4>Mobile Development</h4>
+
+                            <p>Experienced in mobile app development for Android and iOS platforms, I specialize in creating custom solutions using Flutter and Android Studio. I deliver high-performance apps to meet clients' specific needs.</p>
+
+                        </section>
+
+                    </section>
+
+                    <section class="services-grid-service glow-blue hide-translateY">
+
+                        <div class="services-grid-service-image">
+
+                            <img src="assets/icons/computer.png" alt="Software Development" />
+
+                        </div>
+
+                        <section class="services-grid-service-text">
+
+                            <h4>Software Development</h4>
+
+                            <p>I specialize in developing Windows desktop applications using C#, .NET, C++, JAVA and UI/UX design. Delivering high-performance and intuitive and high-performance software solutions tailored to meet clients' needs.</p>
+
+                        </section>
+
+                    </section>
+
+                    <section class="services-grid-service glow-blue hide-translateY">
+
+                        <div class="services-grid-service-image">
+
+                            <img src="assets/icons/it support.png" alt="IT Support" />
+
+                        </div>
+
+                        <section class="services-grid-service-text">
+
+                            <h4>IT Support</h4>
+
+                            <p>In addition to my experience in development, I offer IT support to ensure optimal system performance. I excel at resolving technical issues quickly and efficiently, minimizing downtime and maximizing productivity."</p>
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio">
+
+            <!-- Title and icon container for the services section -->
+            <header class="title">
+
+                <div class="header-container">
+
+                    <h2>My Portfolio</h2>
+
+                    <img src="assets/icons/about-me.png" alt="About Me" />
+
+                </div>
+
+                <p>Some of applications, websites and softwares I have developed</p>
+
+            </header>
+
+            <!-- A container for text and portfolio section -->
+            <section class="showcase">
+
+                <!-- Vertical center section for portfolio section -->
+                <section class="vertical-center">
+
+                    <ul id="portfolio-navigation" class="hide-translateY">
+                        <li><a>All</a></li>
+                        <li><a>Web Development</a></li>
+                        <li><a>Mobile Development</a></li>
+                        <li><a>Windows Form Applications</a></li>
+                    </ul>
+
+                </section>
+
+                <!-- A container to display samples -->
+                <section class="portfolio-grid hide-translateY" id="portfolio-samples-container">
+
+                    <!-- The portfolio sample should have the same text of it's category, 
+                    but the spaces should be replaced with a score '-' -->
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/dashboard 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+                        <img src="assets/portfolio samples/ecommerce 1.jpg" alt="Sample" />
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/ecommerce 2.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/gallery 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/management 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/portfolio 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/calendar 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample web-development">
+
+                        <img src="assets/portfolio samples/dashboard 2.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/messenger 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/music player 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/management 3.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/pay bills 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/uber 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/weather 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/social media 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample mobile-development">
+
+                        <img src="assets/portfolio samples/translation 1.jpg" alt="Sample" />
+
+                    </article>
+
+                    <article class="portfolio-sample windows-form-applications">
+
+                        <img src="assets/portfolio samples/management 2.jpg" alt="Sample" />
+
+                    </article>
+
+                </section>
+
+                <!-- A container to display a semi transparent layer -->
+                <div id="portfolio-popup-container" class="hide"></div>
+
+            </section>
+
+        </section>
+
+        <!-- Testimonials section -->
+        <section id="testimonials">
+
+            <!-- Title and icon container for the testimonials section -->
+            <header class="title">
+
+                <div class="header-container">
+
+                    <h2>Testimonials</h2>
+
+                    <img src="assets/icons/about-me.png" alt="About Me" />
+
+                </div>
+
+                <p>What some of my clients said about my work</p>
+
+            </header>
+
+            <!-- A section for testimonials -->
+            <section>
+
+                <!-- A container for clients views -->
+                <section class="content-clients">
+
+                    <section class="client hide-translateY">
+
+                        <div>
+
+                            <img src="assets/images/me.png" alt="Client Image"/>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Ava Nguyen</h3>
+
+                            <p>Working with Ayman has been an absolute pleasure. He went above and beyond to deliver our project on time and within budget. His expertise in web development is unmatched and he was able to bring our vision to life. We appreciate his attention to detail and his excellent communication throughout the process. We will definitely be working with him again in the future.</p>
+
+                        </div>
+
+                    </section>
+
+                    <section class="client hide-translateY">
+
+                        <div>
+
+                            <img src="assets/images/me.png" alt="Client Image"/>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Isaac Patel</h3>
+
+                            <p>Ayman is an exceptional developer. He took the time to understand our unique requirements and provided us with a customized solution that exceeded our expectations. His ability to troubleshoot and resolve complex issues quickly is truly impressive. We are extremely happy with the results and would highly recommend his services.</p>
+
+                        </div>
+
+                    </section>
+
+                    <section class="client hide-translateY">
+
+                        <div>
+
+                            <img src="assets/images/me.png" alt="Client Image"/>
+
+                        </div>
+
+                        <div>
+
+                            <h3>Caleb Kim</h3>
+
+                            <p>Ayman is an incredibly talented mobile app developer. He worked closely with our team to create an intuitive and user-friendly app that has received rave reviews from our customers. His attention to detail and dedication to quality is evident in every aspect of his work. We are grateful for his contribution and look forward to working with him again.</p>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+
+        <section>
+
+            <h2>About Me</h2>
+
+            <p>I'm an experienced developer with expertise in developing windows and mobile applications, websites, and artificial intelligence.</p>
+
+            <p>I started developing during high school, and since then, I have specialized in software engineering. I have a range of technical skills that allow me to deliver high-performance solutions to my clients.</p>
+
+        </section>
+
+        <nav>
+
+            <h2>Site Navigation</h2>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <div class="contact-information">
+
+                <img src="assets/icons/gmail.png" alt="Gmail"/>
+
+                <a href="https://mail.google.com/mail/?view=cm&to=a95yman@gmail.com" target="_blank">a95yman@gmail.com</a>
+
+            </div>
+
+            <div class="contact-information">
+
+                <img src="assets/icons/instagram.png" alt="Instagram"/>
+
+                <a href="https://www.instagram.com/a.y.m.a.n__a.t.i.f" target="_blank">https://www.instagram.com/a.y.m.a.n__a.t.i.f</a>
+
+            </div>
+
+            <div class="contact-information">
+
+                <img src="assets/icons/linkedin.png" alt="Linkedin"/>
+
+                <a href="https://www.linkedin.com/in/ayman-atif-864502264/" target="_blank">https://www.linkedin.com/in/ayman-atif-864502264</a>
+
+            </div>
+
+            <div class="contact-information">
+
+                <img src="assets/icons/whatsapp.png" alt="Whatsapp"/>
+
+                <a href="https://wa.me/212675292841" target="_blank">+212 675292841</a>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <!-- Javascript Files -->
+    <script src="assets/script/main.js"></script>
+
+</body>
+
+</html>
